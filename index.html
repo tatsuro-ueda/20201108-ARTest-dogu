@@ -8,13 +8,21 @@
   </head>
   <body>
     <a-scene embedded arjs="debugUIEnabled: false">
+      <a-assets>
+        <a-asset-items id="dogu" src="dogu.gltf" ></a-asset-items>
+        <!--
+        <a-asset-items id="hachi" src="hachi.gltf" ></a-asset-items>
+        -->
+      </a-assets>
       <a-marker preset="hiro">
-        <a-assets>
-          <a-asset-items id="bird" src="scene.gltf" ></a-asset-items>
-        </a-assets>
-        <a-entity gltf-model="#bird" scale="0.01 0.01 0.01"></a-entity>
-        </a-marker>
-      <a-sky src="https://cdn.glitch.com/16267b14-9c75-4970-aeec-fe250f8650bf%2Fspace.jpg?1513068076449"></a-sky>
+        <a-entity gltf-model="#dogu" scale="0.003 0.003 0.003" rotation="-90 0 0"></a-entity>
+      </a-marker>
+      <!--
+        <a-marker preset="hiro">
+        <a-entity gltf-model="#hachi" scale="0.003 0.003 0.003" rotation="-90 0 0"></a-entity>
+      </a-marker>
+        -->
+        <a-sky src="https://cdn.glitch.com/16267b14-9c75-4970-aeec-fe250f8650bf%2Fspace.jpg?1513068076449"></a-sky>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
